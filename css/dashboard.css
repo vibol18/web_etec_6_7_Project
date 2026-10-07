@@ -20,7 +20,7 @@ body{
    display: flex;
    flex-direction: column;
    width: 20%;
-    height: 500px;
+    height: 775px;
     margin-left: 5px;
     border-radius: 20px;
     
@@ -40,7 +40,7 @@ body{
 
 }
 .sidebar-items .active{
-    width: 180px;
+    width: 100px;
     box-shadow: rgba(52, 16, 255, 0.15) 0px 48px 100px 0px;
     display: flex;
     align-items: center;
@@ -53,6 +53,14 @@ body{
     font-weight: bold;
     color: black;
     cursor: pointer;
+
+    width: 100px;
+    box-shadow: rgba(52, 16, 255, 0.15) 0px 48px 100px 0px;
+    display: flex;
+    align-items: center;
+    height:30px;
+    border-radius: 10px;
+    background-color: aqua;
 }
 .sidebar-items i{
     font-size: 12px;
@@ -61,7 +69,7 @@ body{
 .holder{
     background-color: aliceblue;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    height: 500px;
+    height: 775px;
     width: 75%;
     border-radius: 20px;
 }
@@ -75,7 +83,7 @@ body{
     display: flex;
     margin-right: 20px;
     width: 100px;
-    background-color: green;
+    background-color: aqua;
     gap: 20px;
     height: 30px;
     justify-content: center;
@@ -107,6 +115,8 @@ body{
 .name{
     margin-top: 10px;
     margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .company{
     width: 170px;
