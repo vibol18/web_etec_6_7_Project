@@ -13,41 +13,82 @@
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div  class="company" style="">
-                <img src="../assets/icon/etec.png" alt="" style="width: 30px;">
-                <h2 class="name">Etec Shop</h2>
+        <aside class="sidebar">
+
+            <div class="company">
+                <img src="../assets/icon/etec.png" alt="Etec Shop">
+                <h2>Etec Shop</h2>
             </div>
-            <div class="sidebar-items">
-                <div class="active">
-                    <a href="#dashboard"><i class="fa-solid fa-house-user"></i>dashboard</a>
-                </div>
-            </div>
-            <div class="sidebar-items">
-                <div class="">
-                    <a href="#notification"><i class="fa-regular fa-bell"></i>Notification</a>
-                </div>
+
+            <div class="menu-title">
+                MAIN MENU
             </div>
 
             <div class="sidebar-items">
-                <div class="">
-                    <a href="./order_dashborad.html"><i class="fa-brands fa-unsplash"></i>Orders</a>
-                </div>
+
+                <a href="#dashboard" class="menu-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#notification" class="menu-link">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>Notification</span>
+                    <small>3</small>
+                </a>
+
+                <a href="./order_dashborad.html" class="menu-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Orders</span>
+                </a>
+
+                <a href="./product_dashborad.html" class="menu-link">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Products</span>
+                </a>
+
+                <a href="#customers" class="menu-link">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Customers</span>
+                </a>
+
             </div>
 
-             <div class="sidebar-items">
-                <div class="">
-                    <a href="./product_dashborad.html"><i class="fa-solid fa-gear"></i>Products</a>
-                </div>
+            <div class="menu-title">
+                SYSTEM
             </div>
-
 
             <div class="sidebar-items">
-                <div class="">
-                    <a href="#setting"><i class="fa-solid fa-gear"></i>Setting</a>
-                </div>
+
+                <a href="#setting" class="menu-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+
+                <a href="#logout" class="menu-link logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+
             </div>
-        </div>
+
+            <!-- Sidebar bottom profile -->
+            <div class="sidebar-profile">
+
+                <div class="profile-image">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="profile-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+        </aside>
         <div class="holder">
             <nav class="navbar">
                 <div class="search">
