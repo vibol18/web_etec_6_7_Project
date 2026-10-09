@@ -170,9 +170,6 @@ body {
     font-size: 11px;
 }
 
-
-/* Logout */
-
 .menu-link.logout {
     color: #ef4444;
 }
@@ -200,21 +197,16 @@ body {
 .profile-image {
     width: 38px;
     height: 38px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     background: var(--primary-light);
-
     color: var(--primary);
 }
 
 .profile-info {
     flex: 1;
-
     display: flex;
     flex-direction: column;
     gap: 3px;
@@ -544,35 +536,6 @@ body {
 }
 
 
-/* =========================================
-   CHART
-========================================= */
-
-.chart {
-    height: 260px;
-
-    display: flex;
-}
-
-.chart-y {
-    width: 40px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    padding-bottom: 25px;
-}
-
-.chart-y span {
-    color: #9ca3af;
-
-    font-size: 9px;
-}
-
-
 
 .line {
     position: absolute;
@@ -599,33 +562,3 @@ body {
     top: 80%;
 }
 
-.bars {
-    height: calc(100% - 30px);
-
-    display: flex;
-
-    align-items: end;
-
-    justify-content: space-around;
-    padding: 15px 25px 0;   
-    position: relative;
-    z-index: 2;
-}
-.bar {
-    width: 30px;
-    border-radius: 5px 5px 0 0;
-    background: var(--primary);
-    opacity: 0.85;
-    transition: 0.2s;
-}
-.bar:hover {
-    opacity: 1;
-}
-.chart-days {
-    height: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #9ca3af;
-    font-size: 9px;
-}
