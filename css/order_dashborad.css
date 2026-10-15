@@ -586,7 +586,6 @@ body {
     border-radius: 15px;
     background-color: var(--blue);
 }
-
 .total{
     width: 250px;
     margin-right: 30px;
@@ -602,9 +601,7 @@ body {
 .line {
     position: absolute;
     left: 0;
-
     width: 100%;
-
     border-top: 1px dashed #e5e7eb;
 }
 

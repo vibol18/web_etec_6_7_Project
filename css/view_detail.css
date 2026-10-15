@@ -40,6 +40,7 @@
     }
 
     .img1{
+        border-radius: 15px;
         width: 450px;
         height: 400px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -77,6 +78,10 @@
 
     .review{
         font-size: 20px;
+
+    }
+    .review i:hover{
+        color: orange;
     }
 
     .prices{
@@ -95,28 +100,39 @@
 
     .resolution{
         font-size: 20px;
+        font-weight: 600;
+        color: gray;
     }
     .refresh-rate{
         font-size: 20px;
+        font-weight: 600;
+        color: gray;
     }
 
     .response-time{
         font-size: 20px;
+        font-weight: 600;
+        color: gray;
     }
 
     .instock{
-        font-weight: bold;
+        font-weight: 600;
         font-size: 20px;
         color: green;
+        
         background-color: lightgreen;
         width: 100px;
         text-align: center;
         margin-left: 5px;
-        border-radius: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 1px 2px green;
     }
 
     .quantity{
         font-size: 18px;
+        font-weight: 700;
+        color: rgb(160, 0, 0);
     }
 
     .add-to-cart{
