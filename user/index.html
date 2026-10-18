@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-        integrity="sha512-x9WwyMYBnLxMNQG6kQ/LyzuINqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1I jqzJmXwFXWrOov6jBV7Qbc0hh9nHg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
         integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="shortcut icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-tYrIUi-8ZuTfiCmWL6HmtrXnf5oCnqIdfjJUPWXX8UgxadHBqnFmI&s=10"
         type="image/x-icon">
@@ -47,14 +48,26 @@
     </nav>
 
     <div class="container">
-        <div class="banner">
-            <img src="../assets/bannerSlide/image.png" alt="" class="">
+       <div class="swiper banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../assets/bannerSlide/image.png" alt="Banner 1" style="width: 100%; display: block;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjijGQHUvfmjnGjKnc_lwrd0pFkgbbJGeApfnDHan0ybcm7_NXJfwPcVY&s=10" alt="Banner 2" style="width: 100%; display: block;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://cdn.dribbble.com/userupload/28674750/file/original-b78cce90abc4fcb0fdc741035ce55dd3.jpg?resize=752x&vertical=center" alt="Banner 3" style="width: 100%; display: block;">
+                </div>
+            </div>
+            
+            <!-- Pagination bullets -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- Navigation buttons -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
         </div>
-        <!-- categorie -->
-        <!-- <div class="category">
-            <h2>Our category</h2>
-        </div> -->
-
         <div class="product-container">
 
             <div class="product-card">
@@ -65,9 +78,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -79,9 +91,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -93,9 +104,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -107,9 +117,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -121,9 +130,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -135,12 +143,12 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
                 </div>
             </div>
 
-              <div class="product-card">
+            <div class="product-card">
                 <div class="products">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFI_RbYFVhKtF1z5XZXXR1AoUnriwTMWv3F-KRTHIkvcBdnyBw05Fx92J0&s=10"
                         alt="" class="product-image">
@@ -148,9 +156,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -162,9 +169,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -176,9 +182,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -190,9 +195,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -204,9 +208,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -218,12 +221,12 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
                 </div>
             </div>
 
-              <div class="product-card">
+            <div class="product-card">
                 <div class="products">
                     <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg"
                         alt="" class="product-image">
@@ -231,9 +234,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -245,9 +247,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -259,9 +260,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -273,9 +273,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -287,9 +286,8 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
-
                 </div>
             </div>
 
@@ -301,28 +299,22 @@
                     <p class="price">$12.33</p>
                     <div class="button">
                         <button>Add To Cart</button>
-                        <button  onclick="window.location.href='./view_detail.html'">View</button>
+                        <button onclick="window.location.href='./view_detail.html'">View</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+<!-- Swiper JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    // const swiper = new Swiper('.banner', {
-    //         loop: true,
-    //         autoplay: {
-    //             delay: 3000,
-    //             disableOnInteraction: false,
-    //         },
-    //         pagination: {
-    //             el: '.swiper-pagination',
-    //             clickable: true,
-    //         },
-    //         navigation: {
-    //             nextEl: '.swiper-button-next',
-    //             prevEl: '.swiper-button-prev',
-    //         },
-    //     });
+    const swiper = new Swiper('.banner', {
+        loop:true,
+        autoplay:{
+            delay:2000,
+        }
+    });
 </script>
 </html>
