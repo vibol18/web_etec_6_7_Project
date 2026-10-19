@@ -235,7 +235,6 @@ body{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition: transform 0.45s ease;
 }
 .product-container {
     display: grid;
@@ -252,8 +251,8 @@ body{
     background: var(--surface);
     box-shadow: 0 4px 16px rgba(24, 45, 35, 0.035);
     transition: transform 180ms ease, box-shadow 180ms ease;
-    cursor: pointer;
 }
+
 
 
 .products {
@@ -270,10 +269,7 @@ body{
     border-radius: 11px;
     background: #f1f4f2;
     object-fit: cover;
-    transition: transform 0.35s ease;
 }
-
-
 
 .products .name {
     margin: 16px 4px 5px;
