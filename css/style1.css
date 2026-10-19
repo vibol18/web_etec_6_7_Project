@@ -1,7 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+    --dark:black;
+    --danger:red;
+    --light:white;
+    --gray:gray;
+    
 }
 body{
     background-color: rgb(33, 33, 64);
@@ -28,7 +30,9 @@ body{
 }
 .footer-column h3{
     font-size: 15px;
-    color: rgb(232, 226, 246);
+    color: var(--gray);
+    font-weight: 500;
+
     gap: 60px;
     
 }

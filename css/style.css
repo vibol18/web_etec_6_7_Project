@@ -91,12 +91,11 @@ body {
     align-items: center;
     gap: 22px;
 }
-<<<<<<< HEAD
 .container{
-    width: 100%;
+    width: min(100% - 64px,1280px);
+    margin: auto;
+    justify-content: center;
     padding-top: 90px;
-    display: flex;
-    flex-direction: column;
 }
 .banner{
     display: flex;
@@ -109,14 +108,6 @@ body {
 .banner img{
     width: 100%;
     height: 450px;
-=======
-
-.icon i {
-    color: #34413b;
-    cursor: pointer;
-    font-size: 18px;
-    transition: color 160ms ease, transform 160ms ease;
->>>>>>> refs/remotes/origin/master
 }
 
 .icon i:hover {
@@ -124,8 +115,7 @@ body {
     transform: translateY(-2px);
 }
 
-<<<<<<< HEAD
-}
+
 .products .name{
     
 
@@ -135,6 +125,7 @@ body {
     font-weight: bold;
 }
 .product-container .product-card{
+    height: 400px;
 
 }
 .product-card img{
@@ -143,16 +134,12 @@ body {
 }
 .products .button{
     gap: 20px;
-=======
-.container {
->>>>>>> refs/remotes/origin/master
     display: flex;
     width: min(100% - 64px, 1280px);
-    flex-direction: column;
+    
     margin: 0 auto;
     padding: 104px 0 72px;
 }
-<<<<<<< HEAD
 .products .button button{
    height: 35px;
    width: 70px;
@@ -165,12 +152,75 @@ body {
     font-weight: bold;
    
     background-color: green;
-=======
->>>>>>> refs/remotes/origin/master
-
+}
 .banner {
     display: flex;
     width: 100%;
+body{
+    background-color: rgb(33, 33, 64);
+}
+.footer{
+    background-color: rgb(33, 33, 64);
+    justify-content: space-around;
+}
+.hr{
+    margin-top: 170px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(110, 202, 202);
+    margin-left: 75px;
+    margin-top: 40px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+}
+.footer-column h3{
+    font-size: 15px;
+    color: rgb(232, 226, 246);
+    gap: 60px;
+    
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+.social-text{
+    color: rgb(232, 226, 226);
+}
+
+.footer-column ul{
+    list-style: none;
+}
+.footer-column ul li{
+    margin-bottom: 30px;
+}
+.footer-column a{
+    text-decoration: none;
+    color: rgb(232, 226, 226);
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+.bottom-links{
+    display: flex;
+    gap: 20px;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: rgb(232, 226, 226);
+}
+.footer-bottom p{
+    color: rgb(232, 226, 226);
+}
+
     height: clamp(300px, 34vw, 440px);
     justify-content: center;
     overflow: hidden;
@@ -185,8 +235,8 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.45s ease;
 }
-
 .product-container {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -202,8 +252,8 @@ body {
     background: var(--surface);
     box-shadow: 0 4px 16px rgba(24, 45, 35, 0.035);
     transition: transform 180ms ease, box-shadow 180ms ease;
+    cursor: pointer;
 }
-
 
 
 .products {
@@ -220,7 +270,10 @@ body {
     border-radius: 11px;
     background: #f1f4f2;
     object-fit: cover;
+    transition: transform 0.35s ease;
 }
+
+
 
 .products .name {
     margin: 16px 4px 5px;
@@ -261,6 +314,71 @@ body {
 .products .button button + button {
     background: #fff;
     color: var(--brand);
+}
+
+body{
+    background-color: rgb(33, 33, 64);
+}
+.footer{
+    background-color: rgb(33, 33, 64);
+    justify-content: space-around;
+}
+.hr{
+    margin-top: 170px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(110, 202, 202);
+    margin-left: 75px;
+    margin-top: 40px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+}
+.footer-column h3{
+    font-size: 15px;
+    color: rgb(232, 226, 246);
+    gap: 60px;
+    
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+.social-text{
+    color: rgb(232, 226, 226);
+}
+
+.footer-column ul{
+    list-style: none;
+}
+.footer-column ul li{
+    margin-bottom: 30px;
+}
+.footer-column a{
+    text-decoration: none;
+    color: rgb(232, 226, 226);
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+.bottom-links{
+    display: flex;
+    gap: 20px;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: rgb(232, 226, 226);
+}
+.footer-bottom p{
+    color: rgb(232, 226, 226);
 }
 
 
