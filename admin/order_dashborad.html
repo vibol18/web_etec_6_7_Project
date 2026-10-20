@@ -1,272 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/order_dashborad.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-    <link rel="stylesheet" href="../css/order_dashborad.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <aside class="sidebar">
-
-            <div class="company">
-                <img src="../assets/icon/etec.png" alt="Etec Shop">
-                <h2>Etec Shop</h2>
-            </div>
-
-            <div class="menu-title">
-                MAIN MENU
-            </div>
-
-            <div class="sidebar-items">
-
-                    <span>Dashboard</span>
-                </a>
-
-                <a href="./notification_dashboard.html" class="menu-link">
-                    <i class="fa-regular fa-bell"></i>
-                    <span>Notification</span>
-                    <small>3</small>
-                </a>
-
-                <a href="./order_dashborad.html" class="menu-link">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Orders</span>
-                </a>
-
-                <a href="./product_dashborad.html" class="menu-link">
-                    <i class="fa-solid fa-box"></i>
-                    <span>Products</span>
-                </a>
-
-                <a href="./customer.html" class="menu-link">
-                    <i class="fa-solid fa-users"></i>
-                    <span>Customers</span>
-                </a>
-
-            </div>
-
-            <div class="menu-title">
-                SYSTEM
-            </div>
-
-            <div class="sidebar-items">
-
-                <a href="#setting" class="menu-link">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Settings</span>
-                </a>
-
-                <a href="../auth/login.html" class="menu-link logout">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <span>Logout</span>
-                </a>
-            </div>
-            <div class="sidebar-profile">
-
-                <div class="profile-image">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-
-                <div class="profile-info">
-                    <strong>Admin User</strong>
-                    <span>Administrator</span>
-                </div>
-
-                <i class="fa-solid fa-ellipsis"></i>
-
-            </div>
-
-        </aside>
-        <div class="holder">
-            <nav class="navbar">
-                <div class="search">
-                    <input type="text">
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-bell"></i>
-                    <div class="account"></div>
-                </div>
-            </nav>
-
-            <div class="list-order">
-                <div class="order-card">
-                    <div class="card-info">
-                        <p class="title">All Orders</p>
-                        <p class="total_count">8</p>
-                        <span class="card-desc">Total orders received</span>
-                    </div>
-                    <div class="card-icon icon-blue">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-
-                <div class="order-card">
-                    <div class="card-info">
-                        <p class="title">Products Approved</p>
-                        <p class="total_count">6</p>
-                        <span class="card-desc">Approved products</span>
-                    </div>
-                    <div class="card-icon icon-green">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </div>
-
-                <div class="order-card">
-                    <div class="card-info">
-                        <p class="title">Total Price</p>
-                        <p class="total_count">$1,250</p>
-                        <span class="card-desc">Total sales amount</span>
-                    </div>
-                    <div class="card-icon icon-orange">
-                        <i class="fa-solid fa-dollar-sign"></i>
-                    </div>
-                </div>
-            </div>
-
-            <table border="1" style="width: 100%;" align="center">
-                <tr style="height: 60px; font-size: 20px;">
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>image</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                    <th>Qty</th>
-                    <th>Status</th>
-                    <th>Total</th>
-                </tr>
-                <tr align="center" style="height: 70px;">
-                    <td>1</td>
-                    <td>Coca</td>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHguxuWCpApinQFedDrBG-9bAPjyoVeTSUkoS6JqO8vg&s=10"
-                            alt="" width="50"></td>
-                    <td>$0.50</td>
-                    <td>Drink</td>
-                    <td>15</td>
-                    <td>
-                        <select name="" id="">
-                            <option value="">Waitting</option>
-                            <option value="">Reject</option>
-                            <option value="">Aprove</option>
-                        </select>
-                    </td>
-                    <td>$7.5</td>
-                </tr>
-
-                <tr align="center" style="height: 70px;">
-                    <td>3</td>
-                    <td>Coca</td>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHguxuWCpApinQFedDrBG-9bAPjyoVeTSUkoS6JqO8vg&s=10"
-                            alt="" width="50"></td>
-                    <td>$0.50</td>
-                    <td>Drink</td>
-                    <td>15</td>
-                    <td>
-                        <select name="" id="">
-                            <option value="">Waitting</option>
-                            <option value="">Reject</option>
-                            <option value="">Aprove</option>
-                        </select>
-                    </td>
-                    <td>$7.5</td>
-                </tr>
-
-                <tr align="center" style="height: 70px;">
-                    <td>4</td>
-                    <td>Coca</td>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHguxuWCpApinQFedDrBG-9bAPjyoVeTSUkoS6JqO8vg&s=10"
-                            alt="" width="50"></td>
-                    <td>$0.50</td>
-                    <td>Drink</td>
-                    <td>15</td>
-                    <td>
-                        <select name="" id="">
-                            <option value="">Waitting</option>
-                            <option value="">Reject</option>
-                            <option value="">Aprove</option>
-                        </select>
-                    </td>
-                    <td>$7.5</td>
-                </tr>
-                <tr align="center" style="height: 70px;">
-                    <td>5</td>
-                    <td>Coca</td>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHguxuWCpApinQFedDrBG-9bAPjyoVeTSUkoS6JqO8vg&s=10"
-                            alt="" width="50"></td>
-                    <td>$0.50</td>
-                    <td>Drink</td>
-                    <td>15</td>
-                    <td>
-                        <select name="" id="">
-                            <option value="">Waitting</option>
-                            <option value="">Reject</option>
-                            <option value="">Aprove</option>
-                        </select>
-                    </td>
-                    <td>$7.5</td>
-                </tr>
-                <tr align="center" style="height: 70px;">
-                    <td>6</td>
-                    <td>Coca</td>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHguxuWCpApinQFedDrBG-9bAPjyoVeTSUkoS6JqO8vg&s=10"
-                            alt="" width="50"></td>
-                    <td>$0.50</td>
-                    <td>Drink</td>
-                    <td>15</td>
-                    <td>
-                        <select name="" id="">
-                            <option value="">Waitting</option>
-                            <option value="">Reject</option>
-                            <option value="">Aprove</option>
-                        </select>
-                    </td>
-                    <td>$7.5</td>
-                </tr>
-                <tr align="center" style="height: 70px;">
-                    <td>7</td>
-                    <td>Coca</td>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHguxuWCpApinQFedDrBG-9bAPjyoVeTSUkoS6JqO8vg&s=10"
-                            alt="" width="50"></td>
-                    <td>$0.50</td>
-                    <td>Drink</td>
-                    <td>15</td>
-                    <td>
-                        <select name="" id="">
-                            <option value="">Waitting</option>
-                            <option value="">Reject</option>
-                            <option value="">Aprove</option>
-                        </select>
-                    </td>
-                    <td>$7.5</td>
-                </tr>
-                <tr align="center" style="height: 70px;">
-                    <td>8</td>
-                    <td>Coca</td>
-                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHguxuWCpApinQFedDrBG-9bAPjyoVeTSUkoS6JqO8vg&s=10"
-                            alt="" width="50"></td>
-                    <td>$0.50</td>
-                    <td>Drink</td>
-                    <td>15</td>
-                    <td>
-                        <select name="" id="">
-                            <option value="">Waitting</option>
-                            <option value="">Reject</option>
-                            <option value="">Aprove</option>
-                        </select>
-                    </td>
-                    <td>$7.5</td>
-                </tr>
-
-            </table>
+      <aside class="sidebar">
+        <div class="company">
+          <img src="../assets/icon/etec.png" alt="Etec Shop" />
+          <h2>Etec Shop</h2>
         </div>
-    </div>
-</body>
 
+        <div class="menu-title">MAIN MENU</div>
+
+        <div class="sidebar-items">
+          <a href="#dashboard" class="menu-link">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="./notification_dashboard.html" class="menu-link">
+            <i class="fa-regular fa-bell"></i>
+            <span>Notification</span>
+            <small>3</small>
+          </a>
+
+          <a href="./order_dashborad.html" class="menu-link active">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Orders</span>
+          </a>
+
+          <a href="./product_dashborad.html" class="menu-link">
+            <i class="fa-solid fa-box"></i>
+            <span>Products</span>
+          </a>
+
+          <a href="./customer.html" class="menu-link">
+            <i class="fa-solid fa-users"></i>
+            <span>Customers</span>
+          </a>
+        </div>
+
+        <div class="menu-title">SYSTEM</div>
+
+        <div class="sidebar-items">
+          <a href="#setting" class="menu-link">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+          </a>
+
+          <a href="../auth/login.html" class="menu-link logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+        <div class="sidebar-profile">
+          <div class="profile-image">
+            <i class="fa-solid fa-user"></i>
+          </div>
+
+          <div class="profile-info">
+            <strong>Admin User</strong>
+            <span>Administrator</span>
+          </div>
+
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </aside>
+      <div class="holder">
+        <nav class="navbar">
+          <div class="search">
+            <input type="text" />
+          </div>
+          <div class="icon">
+            <i class="fa-regular fa-bell"></i>
+            <div class="account">
+              <div class="icon-user">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="list-order">
+          <div class="order-card">
+            <div class="card-info">
+              <p class="title">All Orders</p>
+              <p class="total_count">7</p>
+              <span class="card-desc">Total orders received</span>
+            </div>
+            <div class="card-icon icon-blue">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+
+          <div class="order-card">
+            <div class="card-info">
+              <p class="title">Products Approved</p>
+              <p class="total_count">4</p>
+              <span class="card-desc">Approved products</span>
+            </div>
+            <div class="card-icon icon-green">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+
+          <div class="order-card">
+            <div class="card-info">
+              <p class="title">Total Price</p>
+              <p class="total_count">$1,250</p>
+              <span class="card-desc">Total sales amount</span>
+            </div>
+            <div class="card-icon icon-orange">
+              <i class="fa-solid fa-dollar-sign"></i>
+            </div>
+          </div>
+        </div>
+
+        <table border="1" style="width: 100%" align="center">
+          <tr style="height: 60px; font-size: 20px">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Quantity</th>
+            <th>Status</th>
+            <th>Total</th>
+          </tr>
+          <tr align="center" style="height: 70px">
+            <td>1</td>
+            <td>Coca</td>
+            <td>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHguxuWCpApinQFedDrBG-9bAPjyoVeTSUkoS6JqO8vg&s=10"
+                alt=""
+                width="50"
+              />
+            </td>
+            <td>$0.50</td>
+            <td>Drink</td>
+            <td>15</td>
+            <td>
+              <select name="" id="">
+                <option value="">Aprove</option>
+                <option value="">Waitting</option>
+                <option value="">Reject</option>
+              </select>
+            </td>
+            <td>$7.5</td>
+          </tr>
+
+          <tr align="center" style="height: 70px">
+            <td>2</td>
+            <td>Sprite</td>
+            <td>
+              <img
+                src="https://i.pinimg.com/originals/d6/3a/bf/d63abff75d386e049aafda9d54b316bf.png"
+                alt=""
+                width="50"
+              />
+            </td>
+            <td>$0.50</td>
+            <td>Drink</td>
+            <td>20</td>
+            <td>
+              <select name="" id="">
+                <option value="">Aprove</option>
+                <option value="">Waitting</option>
+                <option value="">Reject</option>
+              </select>
+            </td>
+            <td>$10</td>
+          </tr>
+
+          <tr align="center" style="height: 70px">
+            <td>3</td>
+            <td>Heineken</td>
+            <td>
+              <img
+                src="https://i.pinimg.com/originals/8d/f6/ba/8df6ba82c198e62e739c8e1c2dc9a06a.png"
+                alt=""
+                width="50"
+              />
+            </td>
+            <td>$1.20</td>
+            <td>Drink</td>
+            <td>25</td>
+            <td>
+              <select name="" id="">
+                <option value="">Aprove</option>
+                <option value="">Waitting</option>
+                <option value="">Reject</option>
+              </select>
+            </td>
+            <td>$30</td>
+          </tr>
+          <tr align="center" style="height: 70px">
+            <td>4</td>
+            <td>Red Bull</td>
+            <td>
+              <img
+                src="https://i.pinimg.com/736x/b6/de/89/b6de89be716b2d1faf844266c9d7bf24.jpg"
+                alt=""
+                width="50"
+              />
+            </td>
+            <td>$3.25</td>
+            <td>Drink</td>
+            <td>45</td>
+            <td>
+              <select name="" id="">
+                <option value="">Waitting</option>
+                <option value="">Reject</option>
+                <option value="">Aprove</option>
+              </select>
+            </td>
+            <td>$130</td>
+          </tr>
+          <tr align="center" style="height: 70px">
+            <td>5</td>
+            <td>Monster</td>
+            <td>
+              <img
+                src="https://i.pinimg.com/736x/7d/86/4e/7d864e306846cc494b7c3189a1653a78.jpg"
+                alt=""
+                width="50"
+              />
+            </td>
+            <td>$2.5</td>
+            <td>Drink</td>
+            <td>35</td>
+            <td>
+              <select name="" id="">
+                <option value="">Waitting</option>
+                <option value="">Reject</option>
+                <option value="">Aprove</option>
+              </select>
+            </td>
+            <td>$75</td>
+          </tr>
+          <tr align="center" style="height: 70px">
+            <td>6</td>
+            <td>Prime</td>
+            <td>
+              <img
+                src="https://i.pinimg.com/1200x/2c/ff/e9/2cffe9a8562f9a6ee94f7be6da1eddfa.jpg"
+                alt=""
+                width="50"
+              />
+            </td>
+            <td>$4</td>
+            <td>Drink</td>
+            <td>25</td>
+            <td>
+              <select name="" id="">
+                <option value="">Reject</option>
+                <option value="">Waitting</option>
+                <option value="">Aprove</option>
+              </select>
+            </td>
+            <td>$100</td>
+          </tr>
+          <tr align="center" style="height: 70px">
+            <td>7</td>
+            <td>NesCafe</td>
+            <td>
+              <img
+                src="https://i.pinimg.com/1200x/1d/2c/f8/1d2cf83943141e5239b88673a20e1b58.jpg"
+                alt=""
+                width="50"
+              />
+            </td>
+            <td>$0.50</td>
+            <td>Drink</td>
+            <td>15</td>
+            <td>
+              <select name="" id="">
+                <option value="">Aprove</option>
+                <option value="">Waitting</option>
+                <option value="">Reject</option>
+              </select>
+            </td>
+            <td>$7.5</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
